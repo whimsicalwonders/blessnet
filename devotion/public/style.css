@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f3e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.kingdom {
+    text-align: center;
+    background-color: #a3d9a5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #2e7d32;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #1b5e20;
+    font-size: 1.2em;
+}
+
+#score {
+    font-size: 1.5em;
+    color: #388e3c;
+    margin: 20px 0;
+}
+
+.cucumber-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    position: relative;
+    width: 600px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cucumber {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, left 0.5s ease, top 0.5s ease;
+    position: absolute;
+}
+
+.cucumber:hover {
+    transform: scale(1.2);
+}
+
+.bounce {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #d81b60;
+}

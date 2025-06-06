@@ -1,0 +1,28 @@
+name = "template_name"
+version = "1.0.0"
+type = "text"
+production_host = "emerald-caribou-dorris-qz7odoqq.bls.dev"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "template_name_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "template_name.wasm"
+command = "npm run build:release"
+
+[[deployments]]
+name = "blessnet"
+description = ""
+cid = "bafybeig2thcciy26lf3lrvoqyr4wi4vt56w6276hrejjcodex4ndmszxz4"
+created = "2025-06-05T15:37:45.535Z"
+
+  [deployments.runtime]
+  url = "blessnet.tar.gz"
+  checksum = "d81fa4b6c349b54549c2436bc9309723fc69270b27d3054ce1ce4cf7d9be18cd"
